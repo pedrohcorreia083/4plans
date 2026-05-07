@@ -197,28 +197,27 @@ h6 {
     position: relative;
 }
 
+/* MOBILE HERO */
 @media (max-width: 767px) {
 
     .hero-section {
-        min-height: 58vh;
 
-        /* mostra mais o texto */
-        background-position: 30% center;
+        /* altura automática baseada na tela */
+        min-height: 100vw;
 
-        background-size: cover;
+        /* mostra a imagem inteira */
+        background-size: contain;
 
-        position: relative;
-    }
+        /* centraliza */
+        background-position: center top;
 
-    .hero-section::before {
-        content: '';
-        position: absolute;
-        inset: 0;
+        /* evita repetir */
+        background-repeat: no-repeat;
 
-        /* escurece levemente */
-        background: linear-gradient(to bottom,
-                rgba(0, 0, 0, .15),
-                rgba(0, 0, 0, .25));
+        /* fundo caso sobrem espaços */
+        background-color: #29498a;
+
+        padding-top: 80px;
     }
 
 }
