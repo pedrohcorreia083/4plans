@@ -399,6 +399,113 @@ img {
     margin: 0;
 }
 
+/* ---- TIMELINE (COMO FAZEMOS) ---- */
+.timeline-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.timeline-icon-wrap {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border: 2px solid rgba(41, 182, 246, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 6px 24px rgba(26, 35, 126, 0.10);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.timeline-item:hover .timeline-icon-wrap {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26, 35, 126, 0.15);
+}
+
+.timeline-icon-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.timeline-num {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(41, 182, 246, 0.45);
+}
+
+.timeline-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.timeline-desc {
+    font-size: 0.90rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Arrow connector */
+.timeline-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 44px;
+    /* align with center of icon */
+    font-size: 2rem;
+    color: var(--accent);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .timeline-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .timeline-arrow {
+        padding-top: 0;
+        transform: rotate(90deg);
+    }
+
+    .timeline-item {
+        max-width: 100%;
+    }
+}
+
+
 /* ---- STEP CARDS ---- */
 .step-card {
     background: #fff;
