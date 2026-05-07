@@ -140,6 +140,8 @@ h6 {
 
 .navbar-brand img {
     transition: filter .3s;
+    filter: brightness(0) invert(1);
+
 }
 
 #mainNavbar.scrolled .navbar-brand img {
