@@ -274,9 +274,6 @@ h6 {
     min-height: 320px;
     display: flex;
     align-items: center;
-    background:
-        linear-gradient(135deg, rgba(26, 35, 126, 0.97) 0%, rgba(13, 71, 161, 0.92) 100%),
-        url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80') center/cover no-repeat;
     padding: 120px 0 60px;
 }
 
@@ -378,6 +375,11 @@ img {
     justify-content: center;
     margin-bottom: 20px;
     transition: background .3s;
+}
+
+.service-icon img {
+    width: auto;
+    height: 70px;
 }
 
 .service-card:hover .service-icon {
@@ -798,6 +800,8 @@ img {
 
 .footer-logo {
     filter: brightness(0) invert(1);
+    height: auto;
+    width: 85px;
 }
 
 .footer-heading {
