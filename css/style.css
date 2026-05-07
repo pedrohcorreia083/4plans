@@ -197,10 +197,30 @@ h6 {
     position: relative;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 80% 50%, rgba(41, 182, 246, 0.08) 0%, transparent 60%);
+@media (max-width: 767px) {
+
+    .hero-section {
+        min-height: 58vh;
+
+        /* mostra mais o texto */
+        background-position: 30% center;
+
+        background-size: cover;
+
+        position: relative;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+
+        /* escurece levemente */
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, .15),
+                rgba(0, 0, 0, .25));
+    }
+
 }
 
 .hero-badge {
