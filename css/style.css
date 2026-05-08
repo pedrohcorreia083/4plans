@@ -326,10 +326,28 @@ h6 {
 /* ---- IMG CARD ---- */
 
 .img-about {
-    max-height: 70vh;
-    border-radius: 15%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    .about-img-mobile {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .img-about {
+        width: 100%;
+        max-width: 32vh;
+        border-radius: 18px;
+    }
+
 }
 
 /* ---- A DOR ---- */
