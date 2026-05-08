@@ -325,8 +325,7 @@ h6 {
 
 /* ---- IMG CARD ---- */
 
-img {
-    max-width: auto;
+.img-about {
     max-height: 70vh;
     border-radius: 15%;
     align-items: center;
